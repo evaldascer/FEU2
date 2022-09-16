@@ -1,0 +1,162 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+header {
+  background-color: grey;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+}
+.pilkasFonas {
+  background-color: grey;
+}
+.logoImg {
+  margin-top: 5px;
+  margin-left: 20px;
+  width: auto;
+  height: 40px;
+}
+.inBlDisplay {
+  display: inline-block;
+}
+.griztiTekstas {
+  font-weight: bold;
+  color: darkgray;
+  text-align: right;
+  text-decoration: none;
+}
+.menuListItem {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.noDecor {
+  font-family: sans-serif;
+  color: black;
+  text-decoration: none;
+}
+.noDecor:hover {
+  border-color: white;
+  color: white;
+}
+
+.menuDiv {
+  width: 30%;
+  float: right;
+}
+.menuList {
+  padding: 0;
+}
+.homeDiv {
+  padding-top: 20px;
+}
+.homeTekstas {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: left;
+  width: 60%;
+  float: right;
+  margin: 75px 0 75px 0;
+}
+.mainImg {
+  height: 300px;
+  text-align: right;
+  margin-left: 50px;
+}
+.newsHeader {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+.container1 {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+.container1 div {
+  font-size: 25px;
+  font-weight: bold;
+  border: 0px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.box1 {
+  width: 25%;
+}
+.box2 {
+  width: 25%;
+}
+.box3 {
+  width: 25%;
+}
+.aboutDiv {
+  background-color: grey;
+  padding-top: 20px;
+}
+.leagueName {
+  padding-top: 20px;
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+}
+.container2box {
+  width: 25%;
+  margin: 0;
+  padding: 0;
+}
+.container3 {
+  display: flex;
+  justify-content: center;
+}
+.container3 div {
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  border: 0px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.container3box {
+  width: 30%;
+}
+.contactDiv {
+  background-color: grey;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footerDiv {
+  font-family: sans-serif;
+  background-color: grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.aukstynTekstas {
+  margin-left: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: black;
+}
+.copyRtekstas {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 10;
+}
+
+.mailTekstas {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: black;
+}
+.mailTekstas:hover {
+  color: white;
+}

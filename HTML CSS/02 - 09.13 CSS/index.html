@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>2 paskaitas - CSS</title>
+  <style>
+    p {
+      font-size: 12px;
+      color: rgb(175, 14, 14);
+    }
+
+    #sugalvotasId {
+      line-height: 30px;
+      color: purple;
+    }
+
+    .sugalvotasKlasesPavadinimas {
+      border: 1px solid purple;
+      border-radius: 10%;
+      font-size: 30px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div style="font-family: monospace;">
+    <!--Inline CSS - Linijinis CSS-->
+    <h1>Inline CSS - Linijinis CSS(cascade style sheeting)</h1>
+    <p style="color:coral; font-size: 20px; background-color: blue;">Lorem ipsum dolor sit amet consectetur, adipisicing
+      elit. Quidem, harum.
+    </p>
+    <p style="color:green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, harum?</p>
+    <p style="font: size 20px;">Naudojamas greitas stilizavimui arba testuotis stilius</p>
+  </div>
+  <div>
+    <!-- Internal CSS - Vidinis CSS-->
+    <h1>Internat CSS - Vidinis CSS</h1>
+    <p id="sugalvotasId">
+      Vienas ID gali būti priskirtas vienam elementui. Vienas ID gali turėi tik vieną ID
+    </p>
+    <p class="sugalvotasKlasesPavadinimas">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, ipsum.
+    </p>
+  </div>
+  <div>
+    <!-- Extrenal CSS -->
+    <h1>External CSS - Išorinis CSS</h1>
+    <p class="naujaKlase">
+      <span class="paryskintasTekstas">Išorinis stilizavimas</span> naudojamas tvarkinga ir teisingai stilizuojant
+      paragrafus
+    </p>
+    <p class="naujaKlase">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, blanditiis!
+    </p>
+  </div>
+  <div>
+    <!-- Konspektas -->
+    <div>
+      <!--CSS rašymo būdai-->
+      <h1>CSS rašymo būdai</h1>
+      <ul>
+        <li>Inline - Linijinis rašomas tag'o viduje naudojant 'style' atributą</li>
+        <li>Internal - Vidinis rašomas style tag'o viduje(head dalyje)</li>
+        <li>External - Išorinis rašomas atskirame css faile, kurį reikia prijungti prie html naudojant link tag'ą</li>
+      </ul>
+    </div>
+    <div>
+      <!-- CSS selectoriai-->
+      <h1>CSS selectoriai</h1>
+      <ul>
+        <li>Element - parenkamas elementas pagal jo pavadinimą</li>
+        <li>id - sukuriamas id pavadinimas ir priskiriamas vienam elementui(#idPavadinimas{})</li>
+        <li>class - sukuriamas klas4s pavadinimasir priskiriams bet kokiam kiekiui elementų(.klasesVardas{})</li>
+      </ul>
+    </div>
+    <div>
+      <!-- Stiliai -->
+      <h1>Stiliai</h1>
+      <ul>
+        <li>color - skirtas pakeisti teksto spalvą(color: red)</li>
+        <li>font-size - skirtas pakeisti teksto dydį(font-size: 20px)</li>
+        <li>background-color - skirtas pakeisti fono spalvą(background-color: aqua)</li>
+        <li>font-family - skirtas pakeist šriftą(font-family: monospace)</li>
+        <li>font-weight - skirtas pakeisti teksto storumą(font-weight: bold)</li>
+        <li>line-height - skirtas pakeisti teksto eilutės aukštį(line-height: 20px)</li>
+        <li>border - skirtas nurodyti rėmelio storį, tipą, spalvą(border: 5px solid black)</li>
+        <li>border-radius - skirtas nustatyti rėmelio kampų apvalumą(border-radius: 100px)</li>
+        <li>text-align - skirtas lygiuoti tekstą(text-align: center)</li>
+        <li>font-style - skirtas suteiksti tekstui stilių(italic, normal, oblique)</li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <!-- Video -->
+    <h1>Video</h1>
+    <video src="adresas"></video>
+    <iframe src="" frameborder="0"></iframe>
+    <iframe width="800" height="600" src="https://www.youtube.com/embed/b7FNvq11CEw"
+      title="25 Best Places to Visit in the USA - Travel Video" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+  <div>
+    <!-- Spalvos -->
+    <h1>Spalvos</h1>
+    <ul>
+      <li>140 spalvų pavadinimų(red,...)</li>
+      <li>HSL kodas - mažai naudojamas HSL(0, 100%. 50%)</li>
+      <li>HEX kodas - naudojamas (#FF0000)</li>
+      <li>RGB kodas - naudojamas (rgb(25. 0. 0)</li>
+    </ul>
+    <h1>Permatomos spalvos</h1>
+    <ul>
+      <li>HSL permatomumas nurodomas nuo 0(permatomas) iki 1(pilnai matomas) (hsla(0. 100%. 50%, 1))</li>
+      <li>RGB permatomumas nurodomas nuo 0(permatomas) iki 1(pilnai matomas) (rgba(255, 0, 0, 1))</li>
+      <li>HEX permatomumas nurodomas nuo 00(permatomas) iki FF(pilnai matomas) (#FF0000FF)</li>
+    </ul>
+    <h1>HEX ir RGB</h1>
+    <p>RGB - red green blue. Kiekvienos spalvos nurodomas kiekis(0..255(stiprumas))</p>
+    <p>HEX - kiekvienos spalvos suteikiama nuo 00(nesuteikiama) iki FF(suteikiama daug)</p>
+
+  </div>
+</body>
+
+</html>

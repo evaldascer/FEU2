@@ -1,0 +1,36 @@
+body {
+  background-color: bisque;
+}
+.nerodyti {
+  display: none;
+}
+ul {
+  list-style: none;
+}
+.blokinis {
+  display: block;
+}
+.linijinis {
+  display: inline;
+}
+.linijinisBlokinis {
+  display: inline-block;
+}
+.kvadratas {
+  color: white;
+  height: 100px;
+  width: 100px;
+  background-color: blueviolet;
+  border: 3px dashed red;
+}
+.margin1 {
+  margin: 20px 50px 30px;
+}
+.border1 {
+  border: 15px dotted red;
+  border-right-color: orange;
+  border-style: solid dashed dotted double;
+}
+.padding1 {
+  padding: 20px;
+}

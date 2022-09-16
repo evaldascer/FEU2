@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>4 paskaita</title>
+  <link rel="stylesheet" href="../04- 09.15 Git ir Github/styles/main.css">
+  <link rel="icon" href="../04- 09.15 Git ir Github/images/spurs.png">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#position">Position</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="position">
+      <h1>Position</h1>
+      <ul>
+        <li>Static - statinė</li>
+        <li>Relative - relatyvioji, giminingoji</li>
+        <li>Absolute - absoliučioji</li>
+        <li>Fixed - fiksuotoji</li>
+        <li>Sticky - lipnioji</li>
+      </ul>
+      <p>
+        Naudojant bet kurią apart statinės pozicijos, gauname prieigą prie 4 naujų stilių: top, left right bottom
+        z-index. <br>
+        Šie stiliai nurodo per kokį atstumą elementas turi būti atitrauktas.<br>
+        z-index nurodo elemento prioritetą sluoksniuose esant persidengimui(z ašyje)
+      </p>
+      <p>
+        Statinė pozicija - nieko ypatingo nedaro. Net nesuteiki galimybės naudoti top/left/right/bottom/z-index.
+      </p>
+      <div class="kvadratuKonteineris">
+        <div class="kvadratas statinis">Static</div>
+        <div class="kvadratas statinis top20">Static</div>
+        <div class="kvadratas statinis">Static</div>
+        <div class="kvadratas statinis">Static</div>
+      </div>
+      <p>
+        Reliatyvioji pozcija iš savęs nuieko ypatingo nedaro, bet suteikia naudoti galimybę naudoti
+        top/leftright/bottom/z-index<br>
+        Elementas atsitraukia nuo savo pradinės pozcijos.
+      </p>
+      <div class="kvadratuKonteineris">
+        <div class="kvadratas statinis top_20">Relative</div>
+        <div class="kvadratas reliatyvus">Relative</div>
+        <div class="kvadratas reliatyvus left_30">Relative</div>
+        <div class="kvadratas reliatyvus right_40 z_index">Relative</div>
+      </div>
+      <p>
+        Absoliučioji pozicija - elementas išeina iš puslapio tėkmės.<br>
+        Elementas atsitraukia nuo artimiausio tėvinio/senelionio/.. elemento, kuris turi kokią nors
+        poziciją(positio:relative).<br> Jei neranda, atsitraukia nuo html lango.
+
+      </p>
+      <div class="kvadratuKonteineris reliatyvus">
+        <div class="kvadratas statinis">Static1</div>
+        <div class="kvadratas statinis">Static2</div>
+        <div class="kvadratas absoliutus top_20">Absoliutus3</div>
+        <div class="kvadratas statinis">Statinis4</div>
+      </div>
+      <p>
+        Fiksuotoji pozicija - elementas išeina iš puslapio tėkmės.<br>
+        Ir fiksuojasi nurodytoje arba pradinėje pozicijoje.<br>
+        Jam suteikus top/left/right/bottom, per tiek atsitraukia nuo ekrano šonų.
+      </p>
+      <div class="kvadratuKonteineris reliatyvus">
+        <div class="kvadratas statinis">Static</div>
+        <div class="kvadratas statinis top20">Static</div>
+        <div class="kvadratas fixed top_20 left_30">Fixed</div>
+        <div class="kvadratas statinis">Static</div>
+      </div>
+      <p>
+        Sticky - lipnioji pozicija iš puslapio tėkmės neišeina. Jis prlimpa prie ekrano kraštų ir neišeina ir tėvinio
+        elemento kraštų. Ekrano kraštams priartėjus prie jo, jis prilimpa prie ekrano krašto per nurodytą
+        top/left/right/bottom(position) atstumą ir juda kartu su ekranu, kol nepasiekia tėvinio elemento ribų.
+
+      </p>
+      <div class="kvadratuKonteineris stickyKonteineris reliatyvus">
+        <div class="kvadratas statinis">Static1</div>
+        <div class="kvadratas statinis ">Static2</div>
+        <div class="kvadratas statinis">Statinis3</div>
+        <div class="kvadratas sticky top_20">Sticky4</div>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, veniam. Quam in quis quae doloribus doloremque,
+        cupiditate aliquam. Eligendi doloremque fugiat earum cupiditate totam ex, deserunt recusandae optio doloribus
+        quae unde tempore possimus labore amet ullam voluptatum laudantium illum magnam itaque molestias quo facilis
+        vitae veritatis quas. Et aperiam natus ea aliquid. Mollitia atque quos tempora totam? Delectus facere quas
+        quisquam expedita odit possimus numquam at perferendis nisi ipsam aspernatur fugit non, tempore vitae recusandae
+        consectetur amet. Non cumque, nisi consequuntur, recusandae pariatur voluptate soluta quaerat laborum quasi
+        corrupti nemo velit. Numquam exercitationem totam explicabo quis suscipit repudiandae vero eum quidem ducimus
+        odio officia expedita voluptatem illo dolorem voluptatum vitae nulla voluptatibus dolore, voluptates distinctio
+        aliquam assumenda! Esse sit nemo temporibus animi, voluptatibus, sequi necessitatibus omnis odio, et quidem
+        molestiae enim fugit molestias quas dignissimos illo. Molestiae hic tempora sequi labore cupiditate, sint esse!
+        Sunt iure magni culpa, assumenda, fugit deleniti ex cupiditate odio dolore explicabo aut nobis rerum eos
+        voluptatum amet dolores temporibus, numquam eligendi quisquam voluptates ab labore ducimus. Itaque earum rerum
+        corrupti saepe mollitia, quis aliquid, officiis ex odit, debitis nostrum. Commodi quaerat illum ex eos libero
+        veniam saepe sequi, voluptatibus tempore ullam consequatur porro at recusandae praesentium repellat velit ea
+        voluptas adipisci accusantium sapiente. Ipsam facere enim dolores impedit quae natus. Deleniti quam quae nemo
+        harum eveniet quia aperiam, ipsa eaque iste nam animi quas. Nisi eaque quod aperiam dicta animi? Assumenda
+        magnam pariatur et praesentium deleniti vel fugiat voluptas eius? Deleniti nulla facere, earum sit possimus
+        aspernatur beatae saepe natus, quibusdam, debitis repellat et alias expedita molestiae provident! Unde cum
+        fugiat maiores neque, provident placeat hic nihil amet repudiandae nemo necessitatibus omnis similique illo
+        dolore quaerat debitis delectus pariatur quis culpa vero temporibus earum non iste. Ab quidem repellendus, modi
+        excepturi minima ad vitae pariatur tenetur unde? Modi laboriosam natus dignissimos, inventore exercitationem
+        similique! Ipsa, ex, voluptatum harum consequatur quam porro unde totam mollitia iure vitae temporibus!
+        Aspernatur ipsam, sapiente fuga, in hic cumque minus maiores illum odio porro blanditiis cupiditate ipsa,
+        excepturi facere nobis! Veniam aliquam at ipsam modi est ipsa consectetur perspiciatis a repellendus ducimus
+        dolorum eveniet molestias, tempore necessitatibus sit cupiditate rerum animi, voluptas reiciendis explicabo. Id
+        accusamus voluptatum consectetur excepturi laboriosam dolor aut! Expedita doloribus dolorem sint similique
+        numquam ex nam commodi pariatur, molestiae dolore magnam voluptatem cum consequuntur blanditiis recusandae error
+        eos? Iusto, omnis pariatur voluptas eum odit aut fuga rerum necessitatibus tenetur architecto commodi
+        consectetur enim dolorum cumque labore accusantium repellendus corrupti nesciunt aliquam voluptate. Optio nisi
+        perspiciatis fuga tenetur reprehenderit quidem architecto? Voluptatum consequatur quidem ex eos repellat vel
+        necessitatibus rerum libero animi neque corrupti ipsa nisi enim cupiditate fugit porro eveniet facere, aliquam
+        asperiores obcaecati nihil nemo voluptatibus a aut? Dignissimos debitis repudiandae quis, velit quibusdam
+        necessitatibus nesciunt et. Animi, repudiandae. Numquam accusamus omnis quidem repudiandae impedit vel ex earum
+        illum suscipit perspiciatis nam officia autem aperiam, possimus maxime quo provident velit iusto qui dolores
+        quos? Eligendi odit ducimus voluptas possimus magnam. Recusandae eligendi unde dignissimos quo tempora ipsum
+        tempore saepe vel, doloremque harum obcaecati expedita id animi porro optio sapiente voluptatem blanditiis,
+        assumenda dolores, consequatur praesentium deserunt perspiciatis! Dicta nulla reprehenderit distinctio similique
+        molestiae voluptate maxime magni laboriosam beatae? Aliquid neque, suscipit ipsam repudiandae repellat,
+        similique dicta tenetur iste laborum, asperiores porro exercitationem est vel nulla consequuntur adipisci? Nemo
+        impedit voluptatem molestias amet obcaecati! Numquam minima cum pariatur eaque deleniti consequatur? Tenetur
+        nihil error qui alias itaque provident aut unde quam natus officiis nulla quae ipsam architecto dolores, harum
+        aperiam officia repellat sequi nobis ipsa accusantium repudiandae laudantium modi. Nemo consequatur aspernatur
+        accusamus sint nostrum molestias velit maiores? Enim, voluptatum. Nam delectus alias ducimus dolore dolores
+        expedita distinctio, aspernatur fuga voluptate facere, mollitia fugit, deserunt assumenda eligendi sed. Est nemo
+        excepturi sapiente asperiores corporis at ipsam esse quisquam sit. Facilis fugit vitae omnis temporibus, eius
+        vero quo nesciunt consectetur suscipit facere consequatur labore iste maiores minima commodi velit eveniet ex,
+        mollitia, ut impedit nemo alias? Consectetur doloremque ab, atque vero, at nisi debitis tempora ducimus quasi
+        quidem necessitatibus. Doloribus blanditiis dolores vero architecto, labore praesentium, deserunt eius
+        reprehenderit aliquam quibusdam optio asperiores reiciendis rem esse molestias ullam voluptas doloremque omnis
+        atque. Possimus sint enim illo consequatur excepturi facilis quaerat odit ducimus asperiores aliquid tempora,
+        rem nemo repellendus, magnam quos fugit aliquam totam. Nesciunt maxime repellendus aliquid expedita voluptas
+        odio qui labore? Rerum voluptate quisquam quasi officia? Veritatis perferendis quaerat iure ducimus incidunt quo
+        error temporibus quos vero aspernatur recusandae assumenda eos dolore nesciunt laboriosam accusamus, doloribus
+        dolores corrupti numquam eaque, provident sequi. Vitae eligendi, quisquam dicta vel minus eius nulla quam.
+        Exercitationem, quasi totam! Blanditiis doloremque quasi eum officiis reiciendis sunt ad. Voluptate alias,
+        magnam perferendis fuga nisi tempore doloremque saepe veritatis esse id? Minima dolorum facilis nisi! Natus
+        voluptas aliquam eius. Sapiente maxime deserunt corrupti atque sunt libero et, quaerat pariatur! Voluptate
+        ratione repellendus recusandae in tenetur officiis facere, vitae ab dolore totam quam laboriosam commodi quasi
+        iure sint, ea corrupti quis voluptates nam vel soluta quo. Excepturi iste nisi temporibus asperiores.
+        Consectetur soluta magnam cum facere aspernatur officia excepturi nulla minus, vitae, quas beatae. Possimus enim
+        et ipsum veniam facilis dignissimos corporis autem sit eligendi exercitationem quia alias ex sed, aliquam
+        doloribus ab, minima iusto beatae recusandae eveniet labore pariatur? Distinctio deserunt non necessitatibus quo
+        odio sunt molestias amet repellat provident quaerat, ab alias quod, quia quae soluta! Quo ratione unde iure,
+        earum sint pariatur. Iusto magnam rem aut ad voluptas ab error excepturi modi quis! Reprehenderit numquam
+        praesentium ea minima rem vitae itaque, quaerat ratione quam nam exercitationem pariatur labore asperiores saepe
+        aliquid, dolor vel earum dolorem animi? Culpa animi nisi inventore aspernatur nostrum, provident deleniti
+        perferendis blanditiis neque, architecto ducimus incidunt assumenda dolores placeat. Voluptates rem suscipit
+        dolor aut vitae, necessitatibus adipisci ex, magni neque deserunt ad atque quasi corporis cupiditate, inventore
+        laborum quos in asperiores modi. Temporibus delectus esse totam nemo porro corrupti assumenda modi consequuntur
+        suscipit provident quis fuga dolores natus ea recusandae dolor quam illum, maxime earum aut. Quod?
+      </p>
+
+    </section>
+    <!--Git GtiHub-->
+    <section>
+      <!-- Command line -->
+      <div>
+        <h1>Terminalo komandos</h1>
+        <ul>
+          <li>cd - change directory. vaikščiojimas tarp aplankalų</li>
+          <li>ls - list files and directories</li>
+          <li>CTRL C - atšaukia vykdomą veiksmą, komandą</li>
+          <li>TAB - užbaigia frazę, pateikia pasiūlymą</li>
+          <li>clear - išvalo ekraną, nukelia visas eilutes į viršų</li>
+        </ul>
+      </div>
+      <div>
+        <h1>Git komandos</h1>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+    <!--Icon-->
+    <!-- Selector -->
+    <!--Flex-->
+  </main>
+</body>
+
+</html>

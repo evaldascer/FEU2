@@ -1,0 +1,21 @@
+.melynasTekstas {
+  color: blue;
+}
+.storasTekstas {
+  font-weight: bold;
+}
+.aukstaEilute {
+  line-height: 30px;
+}
+.zaliasTekstas {
+  color: green;
+}
+.pabrauktasTekstas {
+  text-decoration: underline;
+}
+.paverstasTekstas {
+  font-style: italic;
+}
+.sarasas {
+  list-style-type: "- ";
+

@@ -1,0 +1,16 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+h1 {
+  text-align: center;
+  color: crimson;
+}
+.naujaKlase {
+  color: #069130;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.paryskintasTekstas {
+  font-weight: bolder;
+}
+.paverstasTekstas {
+  font-style: italic;
+}

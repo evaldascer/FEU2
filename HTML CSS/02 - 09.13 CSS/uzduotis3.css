@@ -1,0 +1,41 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+.zaliasTekstas {
+  color: rgb(0, 146, 0);
+}
+.raudonasTekstas {
+  color: red;
+}
+.melynasTekstas {
+  color: blue;
+}
+.oranzinisTekstas {
+  color: orange;
+}
+.storasTekstas {
+  font-weight: bolder;
+}
+.nubrauktasTekstas {
+  text-decoration: line-through;
+}
+body {
+  background-color: #fee4c3;
+}
+tr:hover {
+  background-color: white;
+  color: red;
+}
+table,
+td {
+  margin: 0 auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th {
+  border: 2px solid black;
+}
+.centravimas {
+  text-align: center;
+}
+.atitraukimas {
+  padding-left: 10px;
+}
