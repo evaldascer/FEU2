@@ -10,3 +10,42 @@ body {
 .redIcon {
   color: red;
 }
+li {
+  font-size: 20px;
+}
+.klase0 {
+  color: red;
+}
+#id0 {
+  color: blue;
+}
+.class1.class2 {
+  text-decoration: underline;
+}
+.class3 .class4 {
+  color: green;
+}
+section.class3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+.class3 > p {
+  background-color: aqua;
+}
+a:link {
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+a:active {
+  color: red;
+}
+li:hover {
+  background-color: azure;
+  color: orange;
+}
