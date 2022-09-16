@@ -1,0 +1,12 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.bigIcon {
+  font-size: 100px;
+}
+.italicIcon {
+  font-style: italic;
+}
+.redIcon {
+  color: red;
+}

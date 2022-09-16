@@ -2,13 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  margin: 0;
+  margin: 0px;
 }
+
 header {
   background-color: grey;
   height: 50px;
   width: 100%;
-  position: absolute;
+  position: fixed;
 }
 .pilkasFonas {
   background-color: grey;
