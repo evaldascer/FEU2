@@ -1,0 +1,39 @@
+.kvadratas {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(78, 172, 250);
+  border: 5px solid black;
+  text-align: center;
+  line-height: 100px;
+  font-size: 26px;
+}
+.flexContainer {
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  /* flex-direction: column-reverse; */
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+  flex-flow: row wrap;
+  /*  */
+  justify-content: center;
+  align-content: center;
+  /* align-items: center; */
+  gap: 10px 20px;
+  /* align-items: flex-end; */
+}
+/* .flexPirmas {
+  order: 1;
+}
+.flexAntras {
+  order: 2;
+}
+.flexTrecias {
+  order: 3;
+}
+.flexKetvirtas {
+  order: 4;
+} */
+.alignSelfEnd {
+  align-self: flex-end;
+}

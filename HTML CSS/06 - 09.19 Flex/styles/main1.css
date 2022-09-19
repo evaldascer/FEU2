@@ -1,0 +1,67 @@
+.pirmasPratimas {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.kvadratai {
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.flexInFlex {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+.flexInFlexInFlex {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+}
+.pirmasKvadratas {
+  width: 330px;
+  height: 230px;
+}
+.antrasKvadratas {
+  width: 330px;
+  height: 100px;
+}
+.treciasKvadratas {
+  width: 150px;
+  height: 100px;
+}
+.ketvirtasKvadratas {
+  width: 150px;
+  height: 100px;
+}
+.bigTaskContainer {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+.containerTask1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.w33 {
+  width: 33%;
+}
+.w66 {
+  width: 66%;
+}
+.h33 {
+  height: 33%;
+}
+.uzd1 {
+  font-weight: bold;
+  text-align: center;
+  background-image: linear-gradient(to bottom, red, blue, orange);
+}
+.contLevel1 {
+  display: flex;
+  gap: 1px;
+}
