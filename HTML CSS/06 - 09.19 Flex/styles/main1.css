@@ -51,17 +51,42 @@
   width: 33%;
 }
 .w66 {
-  width: 66%;
+  width: 67%;
 }
 .h33 {
   height: 33%;
 }
-.uzd1 {
+.h66 {
+  height: 67%;
+}
+.h50 {
+  height: 50%;
+}
+.taskBg1 {
   font-weight: bold;
   text-align: center;
   background-image: linear-gradient(to bottom, red, blue, orange);
 }
+.taskBg {
+  background-image: url(../images/logo.png);
+  background-size: cover;
+}
 .contLevel1 {
   display: flex;
+  gap: 1px;
+}
+/* Task 3 */
+.containerTask3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.containerTask3Level1 {
+  display: flex;
+  gap: 1px;
+}
+.containerTask2Level2 {
+  display: flex;
+  flex-direction: column;
   gap: 1px;
 }

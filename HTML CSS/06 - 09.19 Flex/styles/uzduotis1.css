@@ -1,0 +1,143 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+body {
+  background-color: rgb(51, 51, 51);
+}
+header {
+  top: 0px;
+  position: sticky;
+  height: 50px;
+  background-color: black;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  margin: 10px 20px;
+  height: 30px;
+}
+.mainMenu {
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+.mainMenu > ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.mainMenu li {
+  list-style: none;
+}
+.mainMenu a {
+  text-decoration: none;
+  color: white;
+}
+.mainMenu a:hover {
+  color: #ff0000;
+}
+.mainLogo {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.mainLogo img {
+  height: 300px;
+}
+/* Ticket */
+.ticketFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 550px;
+}
+.ticketImg img {
+  height: 250px;
+  margin: 100px 30px 100px;
+}
+/* Video */
+.videoFlex {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  background-color: rgb(51, 51, 51);
+  margin: 0px 20px 100px 20px;
+  color: white;
+}
+.videoFlex1 {
+  display: flex;
+  flex-direction: row;
+}
+.videoText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.h60 {
+  height: 60%;
+}
+.h40 {
+  height: 40%;
+}
+.w30 {
+  width: 30%;
+}
+.w70 {
+  width: 70%;
+}
+.w33 {
+  width: 33%;
+}
+.w34 {
+  width: 34%;
+}
+.w15 {
+  width: 10%;
+}
+.w70 {
+  width: 70%;
+}
+/* Footer */
+footer {
+  height: 80px;
+  background-color: black;
+}
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+.bold {
+  font-weight: bold;
+}
+.footerContainer div,
+a {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+.socialMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer a:hover {
+  color: red;
+}
