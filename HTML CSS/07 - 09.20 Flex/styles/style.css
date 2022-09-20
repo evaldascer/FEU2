@@ -1,6 +1,11 @@
 /* Reset */
 body {
   margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+* {
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
@@ -8,6 +13,13 @@ a {
 }
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Common CSS ================*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
 }
 img {
   max-width: 100%;
@@ -17,6 +29,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+h3 {
+  font-weight: normal;
 }
 .h50 {
   height: 50%;
@@ -71,6 +86,11 @@ img {
 /*  */
 
 /* Projects */
+.hr {
+  height: 1px;
+  margin-bottom: 20px;
+  background-color: rgb(206, 204, 204);
+}
 .projects {
   padding: 40px 30px;
 }
@@ -94,4 +114,206 @@ img {
   top: 0;
   right: 0;
   margin: 0;
+}
+/* About */
+.about {
+  padding: 40px 30px;
+}
+.aboutContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  gap: 15px;
+}
+.about h3 {
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 10px 0px;
+}
+.pareigos {
+  opacity: 0.6;
+}
+.mygtukas {
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+  font-size: 16px;
+  background-color: #f1f1f1;
+}
+.mygtukas:hover {
+  background-color: grey;
+}
+.aboutKortele img {
+  filter: grayscale(70%);
+}
+/* Contact */
+.contact {
+  display: flex;
+  min-height: 800px;
+}
+.formContainer {
+  background-color: #a2c0be;
+  max-width: 400px;
+  padding: 20px 30px;
+  padding-bottom: 50px;
+}
+.input {
+  display: block;
+  padding: 5px 7px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+.input:focus-visible {
+  outline-color: grey;
+}
+.contactForm {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.half {
+  flex-basis: 47%;
+}
+.full {
+  flex-basis: 100%;
+}
+.textarea {
+  resize: vertical;
+}
+.sendButton {
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  font-size: 16px;
+}
+.beTarpo {
+  margin-top: 0;
+}
+.addressContainer {
+  display: flex;
+  justify-content: center;
+  background-color: #6c757d;
+  width: 400px;
+  padding-bottom: 50px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  max-width: 55%;
+  margin-top: 100px;
+  align-items: left;
+}
+.info h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+.textTitle {
+  margin-bottom: 0;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.text {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+  font-size: 1rem;
+  color: #a8b1b8;
+  line-height: 3;
+}
+/* Footer============== */
+.siteFooter {
+  background-color: #333;
+  padding: 100px 0 100px;
+  line-height: 1.7;
+  color: #737373;
+  margin: 0 auto;
+}
+.footerContainer {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.footerContainer h3 {
+  margin-top: 0;
+  font-size: 16px;
+  color: white;
+}
+.footerL {
+  display: flex;
+  flex-wrap: wrap;
+  /* max-width: 75%; */
+}
+.footerR {
+  /* flex-basis: 25%; */
+  display: flex;
+  flex-direction: column;
+}
+.footer1 {
+  flex-basis: 40%;
+  /* width: 100%; */
+}
+.footer2 {
+  flex-basis: 30%;
+  /* width: 100%; */
+  /* margin-left: auto; */
+}
+.footer3 {
+  flex-basis: 30%;
+  /* width: 100%; */
+}
+.footer2 ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.p15 {
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 100px;
+}
+.w75 {
+  flex-basis: 75%;
+}
+.w25 {
+  flex-basis: 25%;
+}
+.footer3 a {
+  padding-right: 20px;
+}
+.footerForma {
+  display: flex;
+}
+.w50 {
+  flex-basis: 49%;
+}
+.footerForma {
+  display: flex;
+  max-width: 100%;
+}
+.footerForma input::placeholder {
+  color: white;
+}
+.footerInput {
+  background-color: #737373;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 60%;
+  border: none;
+}
+.footerButton {
+  font-size: 16px;
+  background-color: white;
+  padding: 10px 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  width: 40%;
 }
