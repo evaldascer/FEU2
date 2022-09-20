@@ -1,0 +1,23 @@
+html {
+}
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+header a,
+nav {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 30px;
+  width: 20%;
+}
+header a {
+  margin-left: 30px;
+}
