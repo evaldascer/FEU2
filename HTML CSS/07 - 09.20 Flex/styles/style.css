@@ -1,0 +1,97 @@
+/* Reset */
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img {
+  max-width: 100%;
+}
+/* Helper CSS */
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h50 {
+  height: 50%;
+}
+.w25 {
+  width: 25%;
+}
+/* Header */
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed; */
+  /* width: 100%; */
+  position: sticky;
+  top: 0%;
+  background-color: white;
+  box-shadow: 0px 4px 11px 0px rgb(135, 135, 135);
+}
+.logo {
+  margin: 10px 10px;
+  font-size: 20px;
+  padding: 0 20px;
+}
+.logo span {
+  font-weight: normal;
+}
+.navLink {
+  padding: 10px 20px;
+}
+.mainHeader a:hover {
+  background-color: rgb(189, 189, 189);
+}
+.mainHeader a {
+  letter-spacing: 4px;
+}
+.hero {
+  min-height: 100vh;
+  background: url(../images/architect.jpg) no-repeat center;
+  background-size: cover;
+  font-size: 24px;
+}
+.heroTitle {
+  padding: 10px 20px;
+  color: white;
+}
+.heroTitle span {
+  font-weight: normal;
+  background-color: none;
+  padding: 0px;
+}
+/*  */
+
+/* Projects */
+.projects {
+  padding: 40px 30px;
+}
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.project {
+  position: relative;
+  border: 1px solid #000;
+  flex-basis: 19%;
+  flex-grow: 1;
+}
+.prTitle {
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  font-weight: normal;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+}
