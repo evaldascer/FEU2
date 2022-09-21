@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+/* Team */
+.teamTitle {
+  text-align: center;
+  font-weight: normal;
+}
+.ourTeam {
+  padding: 3% 20px;
+}
+.teamItem {
+  text-align: center;
+}
+.teamGrid {
+}
+.teamItem img {
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.teamItem img:hover {
+  opacity: 0.5;
+}
+.teamName {
+  font-weight: normal;
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.teamPosition {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 18px;
+}
+.teamGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/* ------------Our work------------ */
+.pricingSection {
+  padding: 0 20px;
+}
+.ourWork {
+  padding: 3% 20px;
+  background-color: #333;
+}
+.ourWorkGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+.ourWorkItem1 {
+  color: white;
+}
+.ourWorkItem2 {
+  background-color: white;
+}
+.ourWorkItem2 img {
+  max-width: 100%;
+}
+.customer {
+  font-size: 24px;
+  margin: 10px 0;
+  font-weight: normal;
+}
+.ourWorkItem2 > h4,
+p,
+ul {
+  padding-left: 10px;
+}
+li {
+  list-style-type: none;
+  font-size: 15px;
+}
+.listHeader {
+  font-size: 20px;
+}
+.pL10 {
+  padding-left: 0px;
+}
+/* Pricing */
+.pricingSection {
+  padding-bottom: 20px;
+}
+.pricingGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  text-align: center;
+}
+.listTop {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 0;
+}
+.bo {
+  font-weight: bold;
+}
+.gridCol li {
+  padding: 16px 16px;
+  border: 1px solid #ccc;
+  line-height: 1.5;
+}
+.fonasJuodas {
+  background-color: black;
+}
+.fonasPilkas {
+  background-color: grey;
+}
+.font30 {
+  font-size: 30px;
+}
+.mygtukas {
+  background-color: #009688;
+  color: white;
+  line-height: 1.5;
+  padding: 12px 24px;
+  border: none;
+}
+.mygtukas:hover {
+  background-color: #ccc;
+  color: black;
+}
+.svPilkas {
+  background-color: #f0f0f0;
+}
+.tPermatomas {
+  opacity: 0.6;
+  font-size: 15px;
+  /* color: #f0f0f0; */
+}
+.gridCol:hover {
+  box-shadow: 10px 10px 8px #888888;
+}
+/* Forma */
+.contactSection {
+  background-color: #f0f0f0;
+  padding: 64px 20px;
+}
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+/* Aside */
+.aside {
+  font-family: "Oswald", sans-serif;
+  padding: 20px 20px;
+  width: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: 20px;
+  background-color: #f1f1f1;
+}
+.asideTitle {
+  background-color: black;
+  color: white;
+  padding: 24px 17px;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.postGrid {
+  display: grid;
+  grid-template-columns: 60px auto;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+}
+.postGrid img {
+  grid-row: 1 / span 2;
+}
+.postGrid .artist {
+  font-weight: normal;
+  font-size: 18px;
+  padding-left: 10px;
+  margin: 0;
+}
+.postGrid .album {
+  font-weight: normal;
+  font-size: 15px;
+  padding-left: 10px;
+  margin: 0;
+}
+.postGrid:hover {
+  background-color: #ccc;
+}
