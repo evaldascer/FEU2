@@ -1,0 +1,87 @@
+body {
+  background-color: #f2f2f2;
+}
+/* .formSection {
+  display: flex;
+  justify-content: center;
+}
+.forma {
+  width: 500px;
+}
+.forma input {
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+}
+.forma input::placeholder {
+  color: red;
+}
+
+} */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.formSection h1 {
+  text-align: center;
+  font-style: 30px;
+  line-height: 1.2;
+}
+.forma {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.textInput {
+  max-width: 100%;
+  display: block;
+  border: none;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 25px;
+  line-height: 1.2;
+}
+.textInput::placeholder {
+  color: #bdbdd3;
+}
+
+textarea.textInput {
+  min-height: 100px;
+  resize: vertical;
+}
+.submitBtn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #827ffe;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.1;
+  transition: padding 1s;
+  align-self: center;
+}
+input:focus {
+  padding: 10px 25px;
+  outline: none;
+}
+/* input:focus-visible {
+  padding: 10px 25px;
+  outline: none;
+} */
+.submitBtn:hover {
+  padding: 15px 60px;
+  background-color: #5655b5;
+}
+.megstMiestas {
+  font-weight: bold;
+  padding-bottom: 10px;
+  color: grey;
+}
+.disabledMiestas {
+  color: red;
+}
+.miestas:focus {
+  border: 0;
+}

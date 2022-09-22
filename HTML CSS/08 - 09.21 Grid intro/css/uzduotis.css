@@ -152,6 +152,10 @@ li {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
 }
+.formosApacia {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* Aside */
 .aside {

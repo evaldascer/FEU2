@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Formos</title>
+</head>
+
+<body>
+  <section class="formSection">
+    <h1>SEND US A MESSAGE</h1>
+    <div class="forma">
+      <form class="form" action="" autocomplete="">
+        <input class="textInput" type="text" placeholder="Full name">
+        <input class="textInput" type="text" placeholder="Email">
+        <input class="textInput" type="tel" placeholder="Phone">
+        <div>
+          <input type="checkbox" name="" id="salygos">
+          <label for="salygos">Terms and conditions</label>
+        </div>
+        <fieldset>
+          <legend>Fav color</legend>
+          <input type="radio" name="fav_color" id="red" value="red">
+          <label for="Red">Red</label>
+          <input type="radio" name="fav_color" id="gree" value="green">
+          <label for="Green">Green</label>
+          <input type="radio" name="fav_color" id="blue" value="blue">
+          <label for="Blue">Blue</label>
+        </fieldset>
+
+        <label for="bday">Your b-day</label>
+        <input class="textInput" type="date" name="" id="bday">
+
+        <input type="number" class="textInput" placeholder="fav number" step="0.5" min="0" max="10" name="" id="">
+        <select class="textInput miestas" id="miestai" name="miestai">
+          <option class="disabledMiestas" selected disabled>Miestas</option>
+          <option value="vln">Vilnius</option>
+          <option value="kns">Kaunas</option>
+          <option value="klp">Klaipeda</option>
+          <option value="sia">Šiauliai</option>
+        </select>
+        <label for="avatar">Avatar image</label>
+        <input type="file" name="" id="avatar">
+        <textarea class="textInput" rows="3" placeholder="Your message"></textarea>
+        <button class="submitBtn" onclick="alert('Sent')" type=" submit"><i class="fa fa-paper-plane-o"
+            aria-hidden="true"></i>
+          Send</button>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>

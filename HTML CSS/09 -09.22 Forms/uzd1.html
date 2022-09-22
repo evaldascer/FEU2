@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="./css/uzd1.css">
+  <title>Užduotis</title>
+</head>
+
+<body>
+  <section class="formSection">
+    <h1>Shipping address</h1>
+    <form class="forma" action="" autocomplete="off">
+      <div class="formGrid">
+        <select class="input ilga" name="country" id="">
+          <option class="pirmasSel" selected disabled>Country</option>
+          <option value="lit">Lithuania</option>
+          <option value="lat">Latvia</option>
+          <option value="est">Estonia</option>
+          <option value="fin">Finland</option>
+        </select>
+        <p class="zemasTekstas ilga">
+          Don't see your country listed, head over to our <a class="restOfWorld" href="https://google.com"
+            target="_blank">Rest of World</a> store.
+        </p>
+        <input class="input trumpa" type="text" placeholder="First name">
+        <input class="input trumpa" type="text" placeholder="Last name">
+        <input class="input" type="text" id="address" placeholder="Address line">
+        <input class="input" type="email" id="email" placeholder="Email">
+        <input class="input trumpa" type="text" placeholder="City">
+        <input class="input trumpa" type="text" placeholder="Postal code">
+        <input class="input ilga" type="tel" name="phone" id="tel" placeholder="Phone">
+        <div class="ilga pb20">
+          <input type="checkbox" name="check" id="check">
+          <label class="checkLabel" for="check">Save this information for next time</label>
+        </div>
+        <a class="trumpa returnText" href="#">&larr; Return to cart</a>
+        <button class="trumpa button">Continue to shopping &rarr;</button>
+      </div>
+    </form>
+    <p class="terms">By placing your order you agree to Gymshark's <a href="https://google.com"
+        class="termsConditions">Terms and
+        conditions</a>, <a href="https://google.com" class="privacyNotice">Privacy Notice</a> and <a
+        href="https://google.com" class="coockiePolicy">Cookie
+        Policy.</a>
+    </p>
+  </section>
+</body>
+
+</html>
