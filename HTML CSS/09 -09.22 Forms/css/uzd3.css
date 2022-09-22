@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.contactSection {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.contactSection h1 {
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  margin-bottom: 48px;
+}
+.contactGrid h2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 28px;
+}
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  background-color: #e8edf0;
+  padding: 40px 40px;
+}
+.fullRow {
+  grid-column: 1/3;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+}
+.formInput::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.formInput:focus {
+  outline: none;
+}
+.textarea:focus {
+  outline: none;
+}
+.formLabel {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+.formInput {
+  padding: 6px 12px;
+  border: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.textarea {
+  border: 0;
+  resize: none;
+  font-size: 16px;
+  border-radius: 3px;
+  line-height: 1.5;
+  padding: 6px 12px;
+}
+.mygtukas {
+  padding: 12px 16px;
+  border: none;
+  background-color: #2553b8;
+  color: white;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 1s;
+  width: fit-content;
+}
+.mygtukas:hover {
+  background-color: #212529;
+}
+/* Footer */
+.footGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+.blueCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  background-color: #2553b8;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+}
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactItem p {
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: normal;
+  color: #666;
+}
