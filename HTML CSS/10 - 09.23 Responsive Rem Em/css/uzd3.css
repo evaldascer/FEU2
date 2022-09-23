@@ -1,0 +1,96 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import "reset.css";
+
+body {
+  background-color: lightgray;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.mainHeader {
+  margin: 30px 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+}
+.mainHeader h1 {
+  font-weight: normal;
+  margin-bottom: 0;
+  padding-left: 5px;
+}
+.mainHeader img {
+  max-height: 100%;
+}
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: flex-start;
+}
+.asideLogin {
+  grid-area: asideL;
+}
+.asideHelp {
+  grid-area: asideH;
+}
+.mainItem {
+  grid-area: mainText;
+}
+.mainGrid {
+  background-color: lightgray;
+  margin: 5px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "asideL mainText"
+    "asideH mainText";
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  gap: 10px;
+}
+.gridItem {
+  font-size: 1.5rem;
+  padding: 1em 2em;
+  background-color: #fff;
+  border-radius: 5px;
+  max-width: 100%;
+}
+.asideHelp {
+  display: flex;
+  align-items: center;
+}
+.header a {
+  padding-right: 30px;
+}
+.footerP {
+  text-align: center;
+}
+/* MOBILE================= */
+@media screen and (max-width: 450px) {
+  .mainGrid {
+    max-width: 100%;
+    display: grid;
+    grid-template-areas:
+      "header"
+      "asideL"
+      "asideH"
+      "mainText";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .asideHelp {
+    visibility: visible;
+  }
+  .header {
+    flex-direction: column;
+    padding: 0;
+  }
+  .header a {
+    flex-basis: 100%;
+    border-bottom: 1px solid lightgray;
+    padding: 0.5em 1em;
+  }
+  .header {
+    flex-direction: column;
+  }
+}

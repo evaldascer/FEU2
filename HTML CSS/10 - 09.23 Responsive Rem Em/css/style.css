@@ -1,0 +1,38 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import "reset.css";
+header {
+  background-color: blue;
+}
+main {
+  background-color: coral;
+  flex-basis: 70%;
+}
+aside {
+  background-color: aquamarine;
+  flex-grow: 1;
+}
+footer {
+  background-color: tomato;
+}
+.element {
+  min-height: 150px;
+}
+/* .flex .element {
+  flex-grow: 1;
+} */
+/* MEDIA QUERIES================== */
+@media screen and (max-width: 768px) {
+  main {
+    background-color: coral;
+    flex-basis: 50%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .flex {
+    flex-direction: column;
+    gap: 0;
+  }
+  main {
+    background-color: #fff;
+  }
+}
