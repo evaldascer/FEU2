@@ -1,6 +1,7 @@
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 @import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,400&display=swap");
 
 .container {
   max-width: 1140px;
@@ -78,8 +79,93 @@ p {
 .tripItem img {
   width: 100%;
 }
+/* -----FOOTER----------------- */
+
+.footer {
+  font-family: "Rubik", sans-serif;
+  background-color: #040e27;
+  color: white;
+  color: rgb(170, 177, 183);
+}
+.footer p {
+  font-size: 1.4rem;
+  line-height: 2;
+}
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  line-height: 3.6rem;
+}
+.footer h3 {
+  margin-bottom: 3.5rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color: white;
+}
+.footerInfo {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 11rem 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+  font-size: 1.4rem;
+}
+.footerLogo {
+  margin-bottom: 40px;
+}
+.destinationLists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footerGridItem {
+  padding: 0 1.5em;
+}
+.igPhotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.socialLinks {
+  margin-top: 4.5rem;
+}
+.socialLinks i {
+  font-size: 1.5rem;
+  padding-right: 7px;
+  width: 3rem;
+}
+.socialLinks i:hover {
+  color: red;
+}
+.footerGridItem li:hover {
+  color: red;
+}
+.footerCopyright {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-bottom: 2.5rem;
+}
+/* .igPhotos a {
+  width: 100%;
+} */
+.footerCopyrightBorder {
+  border-top: 1px solid #7a838b;
+  padding-bottom: 2.5rem;
+}
+.copyrightText {
+  text-align: center;
+}
+.redText {
+  color: red;
+}
+
 /* TABLET=============== */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 920px) {
   html {
     font-size: 8px;
   }
@@ -88,6 +174,16 @@ p {
   }
   .tripGrid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .footerInfo {
+    max-width: 920px;
+    padding: 11rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 3rem;
+  }
+  .footerGridItem {
+    margin-bottom: 3rem;
   }
 }
 
@@ -101,5 +197,11 @@ p {
   }
   .tripGrid {
     grid-template-columns: auto;
+  }
+  .footerInfo {
+    max-width: 450px;
+    padding: 5rem 0;
+    grid-template-columns: 1fr;
+    margin: 0;
   }
 }
