@@ -1,0 +1,163 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+/* ------OUR TEAM ------- */
+body {
+  line-height: 1.7;
+  color: gray;
+  font-family: "Open Sans", sans-serif;
+}
+.blue__img {
+  filter: invert(35%) sepia(40%) saturate(7190%) hue-rotate(201deg)
+    brightness(104%) contrast(105%);
+  filter: invert(35%) sepia(40%) saturate(7190%) hue-rotate(201deg)
+    brightness(104%) contrast(105%);
+}
+.section {
+  max-width: 480px;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+.section__header {
+  margin: 0 auto;
+}
+.section__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(0, 123, 255);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.our__team__p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.team__members {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+.team__member {
+  margin-bottom: 1.5em;
+  overflow: hidden;
+}
+.member__name {
+  font-size: 1.2rem;
+  color: black;
+  padding-left: 1rem;
+  margin: 0;
+}
+.member__position {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  color: rgb(204, 204, 204);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin: 0;
+}
+.member__image img {
+  /* overflow: hidden; */
+  display: block;
+}
+.member__image {
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+}
+.social {
+  width: 15%;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(0, 123, 255);
+  position: absolute;
+  list-style-type: none;
+  padding: 1em 0 0;
+  margin: 0;
+  color: white;
+  transform: translateX(-101%);
+  transition: 1s all ease;
+  visibility: hidden;
+}
+.social li {
+  font-size: 1rem;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+.team__member:hover .social {
+  transform: translateX(0);
+  visibility: visible;
+}
+/* OUR SEERVICES */
+.services__item {
+  margin-bottom: 0;
+}
+.services__title {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin-top: 0;
+}
+.services__learn__more {
+  color: #007bff;
+  line-height: 1.7;
+}
+.logo {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.our__services__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+/* .consult__logo::before {
+  content: "";
+
+  background-color: red;
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  display: block;
+  content: url(../img/icons/startup.png);
+} */
+/* -----   TABLET 768px ------ */
+@media screen and (min-width: 768px) {
+  .section__header {
+    max-width: 66.667%;
+  }
+  .team__members {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .section {
+    max-width: 720px;
+  }
+  .our__services__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* -----    LAPTOP    ----- */
+@media screen and (min-width: 1024px) {
+  .team__members {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .section {
+    max-width: 960px;
+  }
+  .our__services__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*  -----    1200px  ------- */
+@media screen and (min-width: 1200px) {
+  .section {
+    max-width: 1024px;
+  }
+}

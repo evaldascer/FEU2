@@ -1,0 +1,18 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import "reset.css";
+.container {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+}
+.main {
+  border: 1px solid #000;
+  background-color: aquamarine;
+}
+.aside {
+  background-color: bisque;
+  height: 300px;
+  border: 1px solid #000;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  overflow-wrap: break-word;
+}

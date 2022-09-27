@@ -1,0 +1,128 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import "reset.css";
+body {
+}
+.tableContainer {
+  min-height: 100vh;
+  background-image: linear-gradient(45deg, rgb(60, 60, 255), rgb(143, 49, 143));
+  display: grid;
+  place-items: center;
+}
+.table {
+  border: 0;
+  /* background-color: white; */
+  width: 1170px;
+  border-collapse: collapse;
+  color: gray;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.tHead th {
+  padding: 1em 0;
+  font-weight: normal;
+  color: white;
+  background-color: black;
+}
+tbody td {
+  padding: 0.7em 1.5em;
+}
+tbody tr:nth-child(even) {
+  background-color: rgb(224, 224, 224);
+}
+tbody tr:nth-child(odd) {
+  background-color: white;
+}
+/*
+tHead th:first-child {
+  border-radius: 10px 0 0 0;
+}
+tHead th:last-child {
+  border-radius: 0 10px 0 0;
+}
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 10px;
+}
+table tr:last-child td:last-child {
+  border-radius: 0 0 10px 0;
+}
+tbody tr td:nth-child(2) { 
+  text-align: center;
+}*/
+tbody tr td:last-child {
+  text-align: center;
+}
+tbody tr:hover {
+  background-color: coral;
+  color: black;
+}
+tbody td {
+  position: relative;
+}
+/* tbody td:hover::after {
+  background-color: green;
+  content: "";
+  height: 10000px;
+  left: 0;
+  position: absolute;
+  top: -5000px;
+  width: 100%;
+  z-index: -1;
+} */
+/* HEADER----------------------------- */
+.unListed {
+  list-style-type: none;
+  padding: 0;
+}
+.logo {
+  max-height: 50px;
+  margin-left: 5em;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+nav {
+}
+nav > ul {
+  position: relative;
+  display: flex;
+  width: 300px;
+  font-weight: bold;
+  /* background-color: coral; */
+  justify-content: space-between;
+  margin-right: 5em;
+  border-radius: 5px;
+}
+.subMenu {
+  position: absolute;
+  background-color: white;
+  /* visibility: hidden; */
+  /* opacity: 0; */
+  border-radius: 5px;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: 1s;
+  left: 0;
+  top: 100%;
+}
+.subMenu li {
+  padding: 0.5em 2em;
+  transition: 0.5s;
+}
+.subMenu li:hover {
+  background-color: rgb(216, 213, 213);
+}
+
+.hasSubMenu:hover .subMenu {
+  /* opacity: 1; */
+  /* visibility: visible; */
+  /* transition: 1s; */
+  transform: scaleY(1);
+  /* left: 0; */
+  /* top: 100%; */
+}
+.navLink {
+  margin: 1em;
+}
