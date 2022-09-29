@@ -1,0 +1,272 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+html {
+  --kaire-spalva: #8490ff;
+  --desine-spalva: #62bdfc;
+  font-size: 14px;
+  color: #222222;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+
+  font-weight: 300;
+  line-height: 1.625;
+}
+section {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  padding-top: 80px;
+}
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+h5 {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+p {
+  color: #777777;
+  margin-bottom: 1.5rem;
+}
+.text-center {
+  text-align: center;
+}
+.maxW {
+  max-width: 67%;
+}
+.unlisted {
+  list-style-type: none;
+  padding: 0;
+}
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.lnr {
+  font-size: 2.5rem;
+}
+.services-title {
+  text-align: center;
+}
+.btn {
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    var(--kaire-spalva),
+    var(--desine-spalva)
+  );
+  padding: 0.9em 1.8em;
+  font-weight: 500;
+  text-transform: uppercase;
+  box-shadow: 0px 20px 20px 0px rgb(132, 144, 255, 30%);
+}
+.menu-content {
+  margin: 0 auto;
+}
+
+/*               HEADER               */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.burger {
+  font-size: 1.8rem;
+  padding-right: 1rem;
+}
+
+/*==============   HERO   ================*/
+.main-hero {
+  background-color: #f9f9ff;
+  padding-top: 80px;
+}
+.hero-left {
+  margin-bottom: 50px;
+}
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+.hero-right img {
+  width: 70%;
+}
+/* ============== ABOUT ================ */
+.about-me .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.about-left {
+}
+.about-left img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.about-right {
+}
+/* =============  SERVICES  ============ */
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+.services-container__item p {
+  max-width: 20rem;
+  margin: 0 auto 1rem;
+}
+.services-title {
+  padding-top: 4.5rem;
+}
+
+/* ============   FACTS   ============== */
+.facts {
+  background: linear-gradient(
+    to right,
+    var(--kaire-spalva),
+    var(--desine-spalva)
+  );
+  padding: 8rem 0;
+}
+.facts .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  justify-content: center;
+}
+.facts-number {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.2em;
+  text-align: center;
+  margin: 0;
+}
+.facts-title {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+/*  =========== PROJECTS  ============== */
+.projects .menu-content {
+  padding-bottom: 4rem;
+}
+.projectList {
+  display: flex;
+  justify-content: center;
+}
+.projectList li {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.5em 0.5em;
+}
+
+/* ===================================== */
+/*          RESPONSIVE                   */
+
+/*            TABLET                     */
+@media screen and (min-width: 600px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .menu-content {
+    max-width: 67%;
+  }
+  /* HERO */
+  .main-hero .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+  }
+  /*  ABOUT ME   */
+  .about-me .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+  }
+  /*    SERVICES     */
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+  }
+  /*    FACTS        */
+  .facts .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*    =========LAPTOP======     920px           */
+@media screen and (min-width: 920px) {
+  html {
+    font-size: 18px;
+  }
+  /*    SERVICES     */
+  .services-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  /*    FACTS        */
+  .facts .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*    ============= 1200px  ================ */
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 1224px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
