@@ -28,9 +28,13 @@ h1 {
   line-height: 1.2em;
 }
 h2 {
+  color: #222;
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  text-align: center;
+  line-height: 1.2;
+  padding: 0 1rem;
 }
 h3 {
   font-size: 1.5rem;
@@ -40,6 +44,7 @@ h3 {
   font-weight: 600;
 }
 h4 {
+  color: #222;
   font-size: 1.25rem;
   text-align: center;
   margin-top: 2rem;
@@ -99,6 +104,7 @@ p {
 /*               HEADER               */
 .main-header {
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
@@ -190,7 +196,7 @@ p {
 }
 /*  =========== PROJECTS  ============== */
 .projects .menu-content {
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 .projectList {
   display: flex;
@@ -201,6 +207,196 @@ p {
   font-weight: 500;
   font-size: 0.9rem;
   padding: 0.5em 0.5em;
+}
+.projectList li:not(:first-child)::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #000;
+  width: 0%;
+}
+.projectList li:not(:first-child):hover::after {
+  width: 50%;
+  transition: width 1s ease-out;
+}
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.projectItem {
+  transition: 2s;
+}
+.projectItem_img {
+  position: relative;
+  border-radius: 5px;
+}
+.projectItem_img > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--kaire-spalva),
+    var(--desine-spalva)
+  );
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+.binoculars {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.projectItem:hover .overlay {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.item_title h4 {
+  margin-bottom: 0;
+}
+/*  =========== PLANS ================== */
+.plans-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+}
+.plans-item {
+  background-color: #f9f9ff;
+  font-size: 14px;
+  padding: 2.5rem 1.5rem;
+  color: #777;
+}
+.plans-item__number {
+  font-size: 36px;
+  display: grid;
+  place-items: center;
+  width: 140px;
+  height: 140px;
+  background-color: #f9f9ff;
+  border: 30px solid #e2e5ff;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.plans-item_list li {
+  padding: 0.8em 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+.plans-item_list li:last-child {
+  border-bottom: 1px solid #eee;
+}
+.plans-item_bottom button {
+  width: 100%;
+  padding: 0.8em 4.5em;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  color: #222222;
+  display: none;
+}
+.plans-item:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  background: linear-gradient(
+    to right,
+    var(--kaire-spalva),
+    var(--desine-spalva)
+  );
+  color: #fff;
+  transition: 0.3s ease-out;
+}
+.plans-item:hover button {
+  display: block;
+}
+.plans-item:hover .plans-item_bottom > h2 {
+  display: none;
+}
+.plans-item:hover p {
+  color: #fff;
+}
+.plans-item:hover .plans-item__number {
+  background-color: transparent;
+}
+.plans-item:hover .item_title h4 {
+  transition: 0s;
+  color: #fff;
+}
+/* ===========  BLOG  ================== */
+.blog-item {
+  margin-top: 3rem;
+}
+.latest-posts {
+  background-color: #f9f9ff;
+}
+.blog-image_container {
+  overflow: hidden;
+}
+.blog-image_container img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.blog-info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 0.8rem 0;
+}
+.blog-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-author img {
+  max-width: 100%;
+  max-height: 100%;
+  /* height: 30px; */
+}
+.blog-author p {
+  margin: 0;
+  padding-left: 1rem;
+}
+.blog-date {
+  /* flex-basis: 35%; */
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.blog-date p {
+  margin-bottom: 0;
+}
+.blog-date .lnr {
+  font-size: 1rem;
+  margin-left: 0.8rem;
+}
+.blog-content {
+  margin-top: 3rem;
+}
+.blog-content h4 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.blog-item:hover .blog-image {
+  transform: scale(1.2);
+  transition: 1s ease-in-out;
+}
+.blog-item:hover .item-title h4 {
+  color: #8490ff;
 }
 
 /* ===================================== */
@@ -214,6 +410,7 @@ p {
   }
   .menu-content {
     max-width: 67%;
+    padding-bottom: 2rem;
   }
   /* HERO */
   .main-hero .container {
@@ -241,12 +438,27 @@ p {
   .facts .container {
     grid-template-columns: repeat(2, 1fr);
   }
+  /*    SERVICES      */
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /*    PLANS        */
+  .plans-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+  /*    BLOG         */
+  .blog-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 }
 
 /*    =========LAPTOP======     920px           */
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 950px) {
   html {
-    font-size: 18px;
+    font-size: 15px;
   }
   /*    SERVICES     */
   .services-container {
@@ -257,16 +469,29 @@ p {
   .facts .container {
     grid-template-columns: repeat(4, 1fr);
   }
+  /*    SERVICES      */
+  .project-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /*    PLANS        */
+  .plans-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /*    ============= 1200px  ================ */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1240px) {
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
   .container {
     max-width: 1224px;
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+  /*    BLOG         */
+  .blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
