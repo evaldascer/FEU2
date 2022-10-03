@@ -1,0 +1,135 @@
+@use "reset";
+@use "vars";
+@use "common";
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+// Latest news
+.late-news {
+  background-color: #333;
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+  & .btn {
+    margin-bottom: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+  }
+  .news__title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .news__subtitle {
+    font-weight: 300;
+    text-align: center;
+  }
+  .news-posts {
+    display: grid;
+    gap: 1rem;
+  }
+}
+.single-post {
+  &__image {
+    width: 100%;
+  }
+  &__description {
+    background-color: #fff;
+    color: #5e5e5e;
+    padding: 1rem;
+  }
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  &__short {
+    margin-bottom: 2rem;
+  }
+}
+.counters {
+  padding: 5rem 0;
+  // background-color: orange;
+  background: url(../img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  .counters-grid {
+    // width: 100%;
+    display: grid;
+    gap: 2rem;
+    &__item {
+      display: grid;
+      .item_title {
+        font-size: 4rem;
+        color: white;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 0.7rem;
+      }
+      .item_subtitle {
+        font-size: 1.3rem;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+}
+.team {
+  margin-top: 3rem;
+  .team-title {
+    margin-bottom: 0;
+    font-size: 2.3rem;
+    color: #545454;
+    font-weight: 700;
+    text-align: center;
+  }
+  .team-subtitle {
+    font-size: 1rem;
+    text-align: center;
+    color: #8c9597;
+    font-weight: 400;
+    margin-bottom: 3rem;
+  }
+  .team-grid {
+    display: grid;
+    gap: 3rem;
+  }
+  .team-member {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0;
+    color: #5e5e5e;
+    &__left {
+      text-align: center;
+      & img {
+        border-radius: 50%;
+      }
+    }
+    &__name {
+      margin-top: 0.8rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    &__socials {
+      display: flex;
+      justify-content: start;
+      & a {
+        height: 25px;
+        width: 25px;
+        // padding: 1em 1em;
+        margin-right: 0.5rem;
+        border: 1px solid;
+        border-radius: 50%;
+        text-align: center;
+      }
+    }
+  }
+}
+@import "media";

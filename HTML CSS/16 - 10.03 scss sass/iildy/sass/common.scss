@@ -1,0 +1,30 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.btn {
+  border: none;
+  background-color: var(--main-color);
+  font-size: 1rem;
+  padding: 0.5em 1em;
+
+  &:hover {
+    background-color: lighten($color: tomato, $amount: 15%);
+  }
+  &.btn--arrow::before {
+    content: "\f138";
+    font-family: "FontAwesome";
+    padding-right: 10px;
+  }
+}
+//   COLORS
+.tomato {
+  color: rgb(241 139 109);
+}
+.yellow {
+  color: rgb(241, 210, 4);
+}
+.purple {
+  color: rgb(106, 77, 138);
+}
