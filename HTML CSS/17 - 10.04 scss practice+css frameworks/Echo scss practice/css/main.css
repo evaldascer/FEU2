@@ -1,0 +1,35 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn, .btn--outline {
+  border: none;
+  padding: 0.8em 1.5em;
+  color: #fff;
+  background-color: #081158;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: 1px solid #081158;
+}
+
+.btn--outline {
+  background-color: #fff;
+  color: #081158;
+}
+
+.header-pill {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.7rem;
+  padding: 0.5em 1.5em;
+  border-radius: 2rem;
+  color: #fbb244;
+  background-color: rgba(251, 178, 68, 0.2);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #081158;
+}/*# sourceMappingURL=main.css.map */

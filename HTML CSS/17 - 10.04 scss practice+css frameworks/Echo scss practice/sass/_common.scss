@@ -1,0 +1,33 @@
+@use "vars" as v;
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  border: none;
+  padding: 0.8em 1.5em;
+  color: v.$primary-light-color;
+  background-color: v.$primary-color;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: 1px solid v.$primary-color;
+}
+.btn--outline {
+  @extend .btn;
+  background-color: v.$primary-light-color;
+  color: v.$primary-color;
+}
+.header-pill {
+  width: fit-content;
+  font-size: 0.7rem;
+  padding: 0.5em 1.5em;
+  border-radius: 2rem;
+  color: v.$secondary-color;
+  background-color: v.$secondary-bg-color;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 2rem;
+  color: v.$primary-color;
+}
