@@ -1,3 +1,12 @@
+@use "reset";
 @use "common";
 
 // VARS
+.hero {
+  .container {
+    display: grid;
+    gap: 2rem;
+  }
+}
+
+@import "media";
