@@ -3,6 +3,11 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(0, 0, 0, 0.5);
+}
 
 .btn {
   border: none;
@@ -21,7 +26,7 @@ body {
   color: v.$primary-color;
 }
 .header-pill {
-  width: fit-content;
+  display: inline-block;
   font-size: 0.7rem;
   padding: 0.5em 1.5em;
   border-radius: 2rem;
@@ -34,15 +39,39 @@ body {
   font-size: 2rem;
   color: v.$primary-color;
 }
-p {
-  font-size: 14px;
-  font-weight: 400;
-  color: rgb(0, 0, 0, 0.5);
-  margin-bottom: 1rem;
-}
+
 img {
   width: 100%;
 }
 .container {
-  padding: 0 1.5rem;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.feature__logo {
+  font-size: 4rem;
+  margin: 0 auto;
+  .fa {
+    margin: 0 auto;
+  }
+}
+.feature-title {
+  font-weight: 700;
+}
+.unlisted {
+  color: rgb(0, 0, 0, 0.5);
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    padding: 0.5em 0;
+  }
+}
+@mixin beforas($kodas: "\f0e0") {
+  &::before {
+    content: $kodas;
+    font-family: "FontAwesome";
+    padding-right: 1em;
+  }
 }

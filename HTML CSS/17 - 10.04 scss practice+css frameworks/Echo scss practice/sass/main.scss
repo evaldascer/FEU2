@@ -1,12 +1,136 @@
 @use "reset";
+@use "vars" as v;
 @use "common";
 
-// VARS
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
 .hero {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
   .container {
     display: grid;
     gap: 2rem;
   }
+  &__text {
+    margin-bottom: 2rem;
+  }
 }
-
+//    FEATURES
+.features {
+  text-align: center;
+  .features-card {
+    &__icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+      margin-top: 0.4em;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: transparentize(v.$secondary-color, 0.5);
+        left: 50%;
+        top: -6px;
+      }
+    }
+    &__title {
+      margin-bottom: 0.2rem;
+    }
+  }
+}
+//    AGENCY
+.agency {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: left;
+  .container {
+    display: grid;
+    gap: 3rem;
+  }
+  &__about {
+    ul {
+      padding-left: 0;
+      padding-bottom: 1rem;
+      li {
+        color: rgb(0, 0, 0, 0.5);
+        list-style: none;
+        &::before {
+          content: "\f00c";
+          font-family: "FontAwesome";
+          padding-right: 0.5em;
+        }
+      }
+    }
+  }
+}
+//    SERVICES
+.services {
+  text-align: center;
+  .services-grid {
+    margin-top: 3rem;
+    display: grid;
+    gap: 2rem;
+  }
+}
+.services-item {
+  padding: 1.5rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 1rem;
+  border: 1px solid transparentize(#000, 0.9);
+  &__image {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 50px;
+    &::before {
+      content: "";
+      color: red;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: transparentize(v.$secondary-color, 0.5);
+      // background-color: red;
+      top: -10px;
+      left: 0;
+    }
+  }
+  .service-info {
+    text-align: left;
+  }
+}
+//    ABOUT
+.about {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  .social-links {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    a {
+      margin-right: 0.5em;
+      width: 30px;
+      height: 30px;
+      background-color: v.$primary-color;
+      color: white;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 30px;
+    }
+  }
+  .contact-card {
+    .email {
+      @include common.beforas("\f0e0");
+    }
+    .phone {
+      @include common.beforas("\f095");
+    }
+    .location {
+      @include common.beforas("\f041");
+    }
+  }
+}
 @import "media";

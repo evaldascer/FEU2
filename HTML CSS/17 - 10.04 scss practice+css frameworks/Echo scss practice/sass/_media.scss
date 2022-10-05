@@ -1,8 +1,47 @@
+@media screen and (min-width: 600px) {
+  .features {
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+  }
+  .services {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
 @media screen and (min-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .hero {
     .container {
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
     }
   }
+  .agency {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 90%;
+  }
+  .features {
+    .features-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  // .services {
+  //   .services-grid {
+  //     grid-template-columns: repeat(3, 1fr);
+  //   }
+  // }
 }
